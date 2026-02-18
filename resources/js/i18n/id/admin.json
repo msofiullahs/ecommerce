@@ -1,0 +1,92 @@
+{
+  "sidebar": {
+    "dashboard": "Dasbor",
+    "products": "Produk",
+    "categories": "Kategori",
+    "orders": "Pesanan",
+    "stock": "Manajemen Stok",
+    "promos": "Promo",
+    "reports": "Laporan",
+    "settings": "Pengaturan",
+    "email_templates": "Template Email",
+    "payment_gateways": "Gateway Pembayaran",
+    "pages": "Halaman",
+    "users": "Pengguna"
+  },
+  "dashboard": {
+    "title": "Dasbor",
+    "today_revenue": "Pendapatan Hari Ini",
+    "monthly_revenue": "Pendapatan Bulanan",
+    "total_orders": "Total Pesanan",
+    "total_customers": "Total Pelanggan",
+    "total_products": "Total Produk",
+    "low_stock": "Stok Rendah",
+    "pending_orders": "Pesanan Tertunda",
+    "revenue_chart": "Pendapatan (30 Hari Terakhir)",
+    "top_products": "Produk Terlaris",
+    "recent_orders": "Pesanan Terbaru",
+    "orders_by_status": "Pesanan Berdasarkan Status"
+  },
+  "products": {
+    "title": "Produk",
+    "add": "Tambah Produk",
+    "edit": "Edit Produk",
+    "name": "Nama",
+    "sku": "SKU",
+    "price": "Harga",
+    "category": "Kategori",
+    "status": "Status",
+    "active": "Aktif",
+    "inactive": "Nonaktif",
+    "featured": "Unggulan",
+    "variants": "Varian",
+    "images": "Gambar",
+    "search": "Cari produk..."
+  },
+  "categories": {
+    "title": "Kategori",
+    "add": "Tambah Kategori",
+    "edit": "Edit Kategori",
+    "name": "Nama",
+    "parent": "Kategori Induk",
+    "products_count": "Produk"
+  },
+  "orders": {
+    "title": "Pesanan",
+    "order_number": "Pesanan #",
+    "customer": "Pelanggan",
+    "status": "Status",
+    "payment_status": "Pembayaran",
+    "total": "Total",
+    "date": "Tanggal",
+    "update_status": "Perbarui Status"
+  },
+  "stock": {
+    "title": "Manajemen Stok",
+    "movements": "Pergerakan Stok",
+    "product": "Produk",
+    "variant": "Varian",
+    "current_stock": "Stok",
+    "threshold": "Batas Minimum",
+    "adjust": "Sesuaikan Stok",
+    "type": "Tipe",
+    "quantity": "Jumlah",
+    "reference": "Referensi"
+  },
+  "common": {
+    "actions": "Aksi",
+    "save": "Simpan",
+    "cancel": "Batal",
+    "delete": "Hapus",
+    "edit": "Edit",
+    "create": "Buat",
+    "search": "Cari...",
+    "confirm_delete": "Apakah Anda yakin ingin menghapus item ini?",
+    "no_data": "Tidak ada data tersedia",
+    "loading": "Memuat...",
+    "per_page": "Per halaman",
+    "showing": "Menampilkan",
+    "of": "dari",
+    "results": "hasil"
+  }
+}

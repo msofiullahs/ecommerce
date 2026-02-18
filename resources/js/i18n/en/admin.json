@@ -1,0 +1,92 @@
+{
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "products": "Products",
+    "categories": "Categories",
+    "orders": "Orders",
+    "stock": "Stock Management",
+    "promos": "Promos",
+    "reports": "Reports",
+    "settings": "Settings",
+    "email_templates": "Email Templates",
+    "payment_gateways": "Payment Gateways",
+    "pages": "Pages",
+    "users": "Users"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "today_revenue": "Today's Revenue",
+    "monthly_revenue": "Monthly Revenue",
+    "total_orders": "Total Orders",
+    "total_customers": "Total Customers",
+    "total_products": "Total Products",
+    "low_stock": "Low Stock Items",
+    "pending_orders": "Pending Orders",
+    "revenue_chart": "Revenue (Last 30 Days)",
+    "top_products": "Top Products",
+    "recent_orders": "Recent Orders",
+    "orders_by_status": "Orders by Status"
+  },
+  "products": {
+    "title": "Products",
+    "add": "Add Product",
+    "edit": "Edit Product",
+    "name": "Name",
+    "sku": "SKU",
+    "price": "Price",
+    "category": "Category",
+    "status": "Status",
+    "active": "Active",
+    "inactive": "Inactive",
+    "featured": "Featured",
+    "variants": "Variants",
+    "images": "Images",
+    "search": "Search products..."
+  },
+  "categories": {
+    "title": "Categories",
+    "add": "Add Category",
+    "edit": "Edit Category",
+    "name": "Name",
+    "parent": "Parent Category",
+    "products_count": "Products"
+  },
+  "orders": {
+    "title": "Orders",
+    "order_number": "Order #",
+    "customer": "Customer",
+    "status": "Status",
+    "payment_status": "Payment",
+    "total": "Total",
+    "date": "Date",
+    "update_status": "Update Status"
+  },
+  "stock": {
+    "title": "Stock Management",
+    "movements": "Stock Movements",
+    "product": "Product",
+    "variant": "Variant",
+    "current_stock": "Stock",
+    "threshold": "Threshold",
+    "adjust": "Adjust Stock",
+    "type": "Type",
+    "quantity": "Quantity",
+    "reference": "Reference"
+  },
+  "common": {
+    "actions": "Actions",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "search": "Search...",
+    "confirm_delete": "Are you sure you want to delete this item?",
+    "no_data": "No data available",
+    "loading": "Loading...",
+    "per_page": "Per page",
+    "showing": "Showing",
+    "of": "of",
+    "results": "results"
+  }
+}

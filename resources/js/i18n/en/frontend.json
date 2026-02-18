@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "cart": "Cart",
+    "orders": "My Orders",
+    "profile": "Profile",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout"
+  },
+  "home": {
+    "hero_title": "Welcome to Our Store",
+    "hero_subtitle": "Discover amazing products at great prices",
+    "featured_products": "Featured Products",
+    "shop_now": "Shop Now",
+    "categories": "Browse Categories",
+    "view_all": "View All"
+  },
+  "products": {
+    "search": "Search products...",
+    "sort_by": "Sort by",
+    "newest": "Newest",
+    "price_low": "Price: Low to High",
+    "price_high": "Price: High to Low",
+    "add_to_cart": "Add to Cart",
+    "out_of_stock": "Out of Stock",
+    "select_variant": "Select Variant",
+    "quantity": "Quantity",
+    "description": "Description",
+    "related": "Related Products",
+    "no_products": "No products found",
+    "all_categories": "All Categories",
+    "filter": "Filter"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "product": "Product",
+    "price": "Price",
+    "quantity": "Quantity",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "remove": "Remove",
+    "empty": "Your cart is empty",
+    "continue_shopping": "Continue Shopping",
+    "checkout": "Checkout",
+    "promo_code": "Promo Code",
+    "apply": "Apply",
+    "discount": "Discount"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "shipping_info": "Shipping Information",
+    "name": "Full Name",
+    "phone": "Phone Number",
+    "address": "Address",
+    "city": "City",
+    "province": "Province",
+    "postal_code": "Postal Code",
+    "payment_method": "Payment Method",
+    "order_summary": "Order Summary",
+    "place_order": "Place Order",
+    "notes": "Order Notes (Optional)"
+  },
+  "orders": {
+    "title": "My Orders",
+    "order_number": "Order #",
+    "date": "Date",
+    "status": "Status",
+    "total": "Total",
+    "details": "View Details",
+    "no_orders": "No orders yet",
+    "items": "Items",
+    "shipping": "Shipping Info",
+    "payment": "Payment Info"
+  },
+  "order_success": {
+    "title": "Order Confirmed!",
+    "message": "Thank you for your order. We will process it shortly.",
+    "view_order": "View Order"
+  },
+  "profile": {
+    "title": "My Profile",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "city": "City",
+    "province": "Province",
+    "postal_code": "Postal Code",
+    "change_password": "Change Password",
+    "current_password": "Current Password",
+    "new_password": "New Password",
+    "confirm_password": "Confirm Password",
+    "save": "Save Changes"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "remember_me": "Remember me",
+    "no_account": "Don't have an account?",
+    "has_account": "Already have an account?",
+    "name": "Name",
+    "confirm_password": "Confirm Password"
+  },
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "language": "Language"
+  }
+}

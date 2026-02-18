@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "products": "Produk",
+    "cart": "Keranjang",
+    "orders": "Pesanan Saya",
+    "profile": "Profil",
+    "login": "Masuk",
+    "register": "Daftar",
+    "logout": "Keluar"
+  },
+  "home": {
+    "hero_title": "Selamat Datang di Toko Kami",
+    "hero_subtitle": "Temukan produk luar biasa dengan harga terbaik",
+    "featured_products": "Produk Unggulan",
+    "shop_now": "Belanja Sekarang",
+    "categories": "Telusuri Kategori",
+    "view_all": "Lihat Semua"
+  },
+  "products": {
+    "search": "Cari produk...",
+    "sort_by": "Urutkan",
+    "newest": "Terbaru",
+    "price_low": "Harga: Rendah ke Tinggi",
+    "price_high": "Harga: Tinggi ke Rendah",
+    "add_to_cart": "Tambah ke Keranjang",
+    "out_of_stock": "Stok Habis",
+    "select_variant": "Pilih Varian",
+    "quantity": "Jumlah",
+    "description": "Deskripsi",
+    "related": "Produk Terkait",
+    "no_products": "Produk tidak ditemukan",
+    "all_categories": "Semua Kategori",
+    "filter": "Filter"
+  },
+  "cart": {
+    "title": "Keranjang Belanja",
+    "product": "Produk",
+    "price": "Harga",
+    "quantity": "Jumlah",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "remove": "Hapus",
+    "empty": "Keranjang Anda kosong",
+    "continue_shopping": "Lanjut Belanja",
+    "checkout": "Checkout",
+    "promo_code": "Kode Promo",
+    "apply": "Terapkan",
+    "discount": "Diskon"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "shipping_info": "Informasi Pengiriman",
+    "name": "Nama Lengkap",
+    "phone": "Nomor Telepon",
+    "address": "Alamat",
+    "city": "Kota",
+    "province": "Provinsi",
+    "postal_code": "Kode Pos",
+    "payment_method": "Metode Pembayaran",
+    "order_summary": "Ringkasan Pesanan",
+    "place_order": "Buat Pesanan",
+    "notes": "Catatan Pesanan (Opsional)"
+  },
+  "orders": {
+    "title": "Pesanan Saya",
+    "order_number": "Pesanan #",
+    "date": "Tanggal",
+    "status": "Status",
+    "total": "Total",
+    "details": "Lihat Detail",
+    "no_orders": "Belum ada pesanan",
+    "items": "Barang",
+    "shipping": "Info Pengiriman",
+    "payment": "Info Pembayaran"
+  },
+  "order_success": {
+    "title": "Pesanan Dikonfirmasi!",
+    "message": "Terima kasih atas pesanan Anda. Kami akan segera memprosesnya.",
+    "view_order": "Lihat Pesanan"
+  },
+  "profile": {
+    "title": "Profil Saya",
+    "name": "Nama",
+    "email": "Email",
+    "phone": "Telepon",
+    "address": "Alamat",
+    "city": "Kota",
+    "province": "Provinsi",
+    "postal_code": "Kode Pos",
+    "change_password": "Ubah Kata Sandi",
+    "current_password": "Kata Sandi Saat Ini",
+    "new_password": "Kata Sandi Baru",
+    "confirm_password": "Konfirmasi Kata Sandi",
+    "save": "Simpan Perubahan"
+  },
+  "auth": {
+    "login": "Masuk",
+    "register": "Daftar",
+    "email": "Email",
+    "password": "Kata Sandi",
+    "remember_me": "Ingat saya",
+    "no_account": "Belum punya akun?",
+    "has_account": "Sudah punya akun?",
+    "name": "Nama",
+    "confirm_password": "Konfirmasi Kata Sandi"
+  },
+  "common": {
+    "loading": "Memuat...",
+    "save": "Simpan",
+    "cancel": "Batal",
+    "delete": "Hapus",
+    "edit": "Edit",
+    "back": "Kembali",
+    "language": "Bahasa"
+  }
+}
