@@ -1,59 +1,164 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Ecommerce
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A full-featured e-commerce application built with Laravel 12, Inertia.js, Vue 3, and TailwindCSS.
 
-## About Laravel
+## Tech Stack
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **Backend**: Laravel 12 (PHP 8.3+)
+- **Admin Dashboard**: TailAdmin + Inertia.js + Vue 3 + TailwindCSS
+- **Customer Frontend**: Inertia.js + Vue 3 + TailwindCSS
+- **Database**: MySQL
+- **API**: RESTful with Laravel Sanctum
+- **Translations**: English & Indonesian (UI + product content)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Admin Dashboard** - Graphic dashboard with revenue charts, order stats, top products
+- **Product Management** - CRUD with translatable fields, image uploads, variant management
+- **Category Management** - Hierarchical categories with translations
+- **Stock Management** - Stock adjustments, movement history, low stock alerts
+- **Order Management** - Order lifecycle with status transitions, order timeline
+- **Promo Management** - Percentage/fixed discount codes with usage limits
+- **Report Management** - Sales & product reports with Excel/PDF export
+- **User Management** - Role-based access control (Super Admin, Admin, Warehouse Staff, Customer Service, Customer)
+- **Settings Management** - General, SEO, social media, banner settings
+- **Email Templates** - Customizable notification templates with translations
+- **Payment Gateways** - Stripe, Midtrans, DOKU integration with admin configuration
+- **Translation Support** - Full i18n for admin, frontend, and API (EN/ID)
+- **Mobile API** - RESTful API with Sanctum token authentication
+- **Customer Frontend** - Product browsing, cart, checkout, order history, profile
 
-## Learning Laravel
+## Requirements
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+- PHP 8.3+
+- MySQL 8.0+
+- Node.js 18+
+- Composer
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Installation
 
-## Laravel Sponsors
+```bash
+# Install PHP dependencies
+composer install
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+# Install Node dependencies
+npm install
 
-### Premium Partners
+# Copy environment file and configure
+cp .env.example .env
+php artisan key:generate
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+# Configure database in .env
+# DB_CONNECTION=mysql
+# DB_DATABASE=ecommerce
+# DB_USERNAME=root
+# DB_PASSWORD=your_password
 
-## Contributing
+# Run migrations and seeders
+php artisan migrate --seed
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+# Create storage symlink
+php artisan storage:link
 
-## Code of Conduct
+# Build assets
+npm run build
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Development
 
-## Security Vulnerabilities
+```bash
+# Start Vite dev server (HMR)
+npm run dev
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+# With Laravel Valet
+# App available at http://ecommerce.test
+
+# With artisan serve
+php artisan serve
+# App available at http://localhost:8000
+```
+
+## Default Admin Login
+
+- **Email**: admin@example.com
+- **Password**: password
+
+## User Roles
+
+| Role | Access |
+|------|--------|
+| Super Admin | Full system access |
+| Admin | Product, category, stock, order, promo, report, settings management |
+| Warehouse Staff | Stock management, view orders |
+| Customer Service | Order management, view products/customers |
+| Customer | Browse, cart, checkout, order history, profile |
+
+## Project Structure
+
+```
+app/
+  Http/Controllers/
+    Admin/          # Admin panel controllers
+    Api/V1/         # Mobile API controllers
+    Auth/           # Authentication controllers
+    Frontend/       # Customer frontend controllers
+  Models/           # Eloquent models
+  Services/         # Business logic (Order, Cart, Stock, Promo, Payment, Report)
+  Enums/            # OrderStatus, PaymentStatus, PromoType, StockMovementType
+  Events/           # OrderPlaced, OrderStatusChanged, StockLow
+  Listeners/        # Email notification listeners
+  Mail/             # Mailable classes
+
+resources/js/
+  Pages/
+    Admin/          # Admin Vue pages (24 pages)
+    Frontend/       # Customer Vue pages (11 pages)
+    Auth/           # Login & Register pages
+  Components/
+    Admin/          # Admin components (Layout, UI, Charts, Forms, Data)
+    Frontend/       # Customer components (Layout)
+  Composables/      # useCart, useLocale, useAuth
+  i18n/             # Translation JSON files (en/id)
+  types/            # TypeScript type definitions
+
+routes/
+  web.php           # Customer routes
+  admin.php         # Admin routes (/admin)
+  api.php           # API routes (/api/v1)
+```
+
+## API Endpoints
+
+All API routes are prefixed with `/api/v1`.
+
+| Method | Endpoint | Auth | Description |
+|--------|----------|------|-------------|
+| POST | /auth/register | No | Register |
+| POST | /auth/login | No | Login |
+| POST | /auth/logout | Yes | Logout |
+| GET | /products | No | List products |
+| GET | /products/{id} | No | Product detail |
+| GET | /categories | No | List categories |
+| GET | /settings | No | Public settings |
+| GET | /cart | Yes | View cart |
+| POST | /cart/items | Yes | Add to cart |
+| PUT | /cart/items/{id} | Yes | Update cart item |
+| DELETE | /cart/items/{id} | Yes | Remove cart item |
+| POST | /cart/apply-promo | Yes | Apply promo code |
+| GET | /orders | Yes | List orders |
+| POST | /orders | Yes | Place order |
+| GET | /orders/{id} | Yes | Order detail |
+| GET | /profile | Yes | View profile |
+| PUT | /profile | Yes | Update profile |
+
+## Payment Gateways
+
+Configure payment gateways in the admin panel under **Settings > Payment Gateways**. Supported gateways:
+
+- **Stripe** - Credit card payments via Checkout Sessions
+- **Midtrans** - Indonesian payment gateway via Snap
+- **DOKU** - Indonesian payment gateway
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+[MIT](https://opensource.org/licenses/MIT)
